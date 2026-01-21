@@ -1,0 +1,131 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "E1: The Anti-AI Designer",
+      "core_philosophy": "Warm Neumorphism x Soft Clay. No flat design. No sterile white. Everything must feel touchable.",
+      "emotional_tone": "Calm, Radiant, Feminine, Fluid, Tactile"
+    },
+    "typography": {
+      "font_family": {
+        "heading": "Playfair Display, serif",
+        "body": "Nunito, sans-serif",
+        "accent": "Dancing Script, cursive"
+      },
+      "scale": {
+        "h1": "text-4xl font-bold tracking-tight",
+        "h2": "text-3xl font-semibold",
+        "h3": "text-2xl font-medium",
+        "body": "text-base leading-relaxed",
+        "caption": "text-sm text-muted-foreground"
+      },
+      "instructions": "Use Playfair Display for all major headings (Hero, Section Titles). Use Nunito for all body text and UI elements. Use Dancing Script sparingly for greetings like 'Hi, Annie'."
+    },
+    "colors": {
+      "palette": {
+        "primary": {
+          "DEFAULT": "#FF9A5A",
+          "foreground": "#FFFFFF",
+          "light": "#FFD9A0",
+          "dark": "#E07A3C"
+        },
+        "secondary": {
+          "DEFAULT": "#FFF3E0",
+          "foreground": "#5A4A3A"
+        },
+        "background": {
+          "DEFAULT": "#FFF9F5",
+          "paper": "#FFFFFF"
+        },
+        "text": {
+          "primary": "#4A3B32",
+          "secondary": "#8C7B70",
+          "muted": "#C4B5AA"
+        },
+        "accent": {
+          "gold": "#D4AF37",
+          "green": "#A8C6A0",
+          "blue": "#A0C4FF"
+        }
+      },
+      "gradients": {
+        "sunrise": "linear-gradient(135deg, #FF9A5A 0%, #FFD9A0 100%)",
+        "glass": "linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 100%)"
+      }
+    },
+    "visual_enhancers": {
+      "shadows": {
+        "neumorphic": "6px 6px 12px #E6DCC8, -6px -6px 12px #FFFFFF",
+        "neumorphic_pressed": "inset 4px 4px 8px #E6DCC8, inset -4px -4px 8px #FFFFFF",
+        "soft_float": "0 10px 30px -10px rgba(255, 154, 90, 0.3)",
+        "glass": "0 8px 32px 0 rgba(31, 38, 135, 0.07)"
+      },
+      "radius": {
+        "card": "24px",
+        "button": "9999px",
+        "hero": "32px"
+      },
+      "glassmorphism": {
+        "backdrop_filter": "blur(12px)",
+        "border": "1px solid rgba(255, 255, 255, 0.4)"
+      }
+    },
+    "layout": {
+      "grid_system": "Mobile-first, single column focus. Use 'Bento' style grids for dashboard widgets but with soft, organic spacing.",
+      "spacing": "Generous. Use p-6 or p-8 for containers. Gap-4 or Gap-6 for lists.",
+      "container": "max-w-md mx-auto (for mobile view simulation on desktop) or w-full h-full for native feel."
+    },
+    "components": {
+      "buttons": {
+        "primary": "bg-gradient-to-r from-[#FF9A5A] to-[#FFD9A0] text-white shadow-lg rounded-full hover:shadow-xl transition-all transform hover:-translate-y-1",
+        "secondary": "bg-[#FFF3E0] text-[#5A4A3A] rounded-full shadow-neumorphic hover:shadow-neumorphic-pressed transition-all",
+        "icon": "p-3 rounded-full bg-[#FFF9F5] shadow-neumorphic text-[#FF9A5A]"
+      },
+      "cards": {
+        "base": "bg-[#FFF9F5] rounded-[24px] shadow-neumorphic border border-white/50",
+        "glass": "bg-white/40 backdrop-blur-md border border-white/30 shadow-glass rounded-[24px]"
+      },
+      "inputs": {
+        "search": "bg-[#FFF9F5] rounded-full shadow-neumorphic-pressed px-6 py-3 text-[#5A4A3A] placeholder-[#C4B5AA] focus:outline-none focus:ring-2 focus:ring-[#FF9A5A]/50"
+      }
+    },
+    "assets": {
+      "images": {
+        "hero_meditation": "https://images.unsplash.com/photo-1729886484969-188f0d7f196c?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "trainer_david": "https://images.unsplash.com/photo-1662302392561-b1deecd3579d?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "trainer_lisa": "https://images.unsplash.com/photo-1755549476788-efd8bf819561?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "program_vinyasa": "https://images.unsplash.com/photo-1660171465646-23a749459e74?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "program_yin": "https://images.pexels.com/photos/3823040/pexels-photo-3823040.jpeg",
+        "category_sleep": "https://images.unsplash.com/photo-1638244398513-17b778d24efe?crop=entropy&cs=srgb&fm=jpg&q=85"
+      },
+      "icons": {
+        "library": "Lucide React",
+        "style": "Stroke width 1.5px, rounded ends. Use soft colors."
+      }
+    },
+    "motion": {
+      "transitions": "all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1)",
+      "hover_effects": "Scale up 1.02, Shadow deepen",
+      "page_transition": "Fade in + Slide up 20px"
+    },
+    "accessibility": {
+      "contrast": "Ensure text on soft backgrounds is #5A4A3A or darker. Do not use white text on light orange.",
+      "focus_states": "Visible ring with offset",
+      "touch_targets": "Minimum 44px for all interactive elements"
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. INSTALL FONTS: Add '@import url(\"https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito:wght@400;600;700&family=Dancing+Script:wght@600&display=swap\");' to index.css",
+    "2. CONFIGURE TAILWIND: Update tailwind.config.js to include the custom colors (cream, warm-orange) and extend borderRadius.",
+    "3. IMPLEMENT NEUMORPHISM: Create a utility class '.shadow-neumorphic' and '.shadow-neumorphic-pressed' in index.css using the values provided.",
+    "4. MOBILE LAYOUT: Wrap the main app content in a container that simulates a mobile screen on desktop (max-w-[480px] mx-auto min-h-screen bg-[#FFF9F5] shadow-2xl overflow-hidden relative).",
+    "5. GLASS NAV: The bottom navigation must be sticky, glassmorphic, and float slightly above the bottom edge.",
+    "6. HERO SECTION: Use the 'hero_meditation' image with a curved bottom mask or border-radius.",
+    "7. DATA-TESTID: Add data-testid to all buttons, inputs, and cards."
+  ],
+  "universal_guidelines": [
+    "Avoid generic 'Bootstrap' looks.",
+    "Do not use pure black (#000000). Use #4A3B32 (Dark Brown) instead.",
+    "Ensure all images have alt text.",
+    "Use 'framer-motion' for page transitions if possible."
+  ]
+}
