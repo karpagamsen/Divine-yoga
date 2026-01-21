@@ -1,0 +1,78 @@
+{
+  "timestamp": "2026-01-21T17:20:05.362633",
+  "total_tests": 14,
+  "passed_tests": 14,
+  "success_rate": 100.0,
+  "test_details": [
+    {
+      "test": "Seed Data",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "User Signup",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "User Login",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get Current User",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get Trainers",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get All Sessions",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get Session Detail",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get Yoga Sessions",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get Meditation Sessions",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get Sleep Sessions",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get Programs",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get Program Detail",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get User Progress",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Update Progress",
+      "success": true,
+      "details": ""
+    }
+  ]
+}
