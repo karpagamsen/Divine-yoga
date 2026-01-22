@@ -1,6 +1,7 @@
 import { useState, useEffect, createContext, useContext } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import axios from 'axios';
+import Welcome from './pages/Welcome';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Home from './pages/Home';
@@ -68,13 +69,14 @@ function App() {
     <AuthContext.Provider value={{ user, login, logout }}>
       <BrowserRouter>
         <Routes>
-          <Route path="/login" element={!user ? <Login /> : <Navigate to="/" />} />
-          <Route path="/signup" element={!user ? <Signup /> : <Navigate to="/" />} />
-          <Route path="/" element={user ? <Home /> : <Navigate to="/login" />} />
-          <Route path="/explore" element={user ? <Explore /> : <Navigate to="/login" />} />
-          <Route path="/schedule" element={user ? <Schedule /> : <Navigate to="/login" />} />
-          <Route path="/profile" element={user ? <Profile /> : <Navigate to="/login" />} />
-          <Route path="/session/:sessionId" element={user ? <SessionDetail /> : <Navigate to="/login" />} />
+          <Route path="/" element={!user ? <Welcome /> : <Navigate to="/home" />} />
+          <Route path="/login" element={!user ? <Login /> : <Navigate to="/home" />} />
+          <Route path="/signup" element={!user ? <Signup /> : <Navigate to="/home" />} />
+          <Route path="/home" element={user ? <Home /> : <Navigate to="/" />} />
+          <Route path="/explore" element={user ? <Explore /> : <Navigate to="/" />} />
+          <Route path="/schedule" element={user ? <Schedule /> : <Navigate to="/" />} />
+          <Route path="/profile" element={user ? <Profile /> : <Navigate to="/" />} />
+          <Route path="/session/:sessionId" element={user ? <SessionDetail /> : <Navigate to="/" />} />
         </Routes>
       </BrowserRouter>
       <Toaster position="top-center" />

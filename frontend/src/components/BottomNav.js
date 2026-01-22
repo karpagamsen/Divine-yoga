@@ -5,7 +5,7 @@ export default function BottomNav({ active }) {
   const navigate = useNavigate();
 
   const navItems = [
-    { name: 'Home', icon: Home, path: '/' },
+    { name: 'Home', icon: Home, path: '/home' },
     { name: 'Explore', icon: Compass, path: '/explore' },
     { name: 'Schedule', icon: Calendar, path: '/schedule' },
     { name: 'Profile', icon: User, path: '/profile' }
