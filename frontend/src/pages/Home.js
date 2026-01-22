@@ -91,9 +91,9 @@ export default function Home() {
 
           <div className="flex justify-around py-4" data-testid="category-icons">
             {[
-              { name: 'Yoga', icon: '🧘' },
-              { name: 'Meditation', icon: '🧘‍♀️' },
-              { name: 'Sleep', icon: '🌙' }
+              { name: 'Yoga', icon: '🧘‍♀️', color: 'bg-coral/30' },
+              { name: 'Meditation', icon: '🧘', color: 'bg-accent-purple/30' },
+              { name: 'Sleep', icon: '🌙', color: 'bg-accent-blue/30' }
             ].map((category) => (
               <button
                 key={category.name}
@@ -101,10 +101,10 @@ export default function Home() {
                 className="flex flex-col items-center gap-2 group"
                 data-testid={`category-${category.name.toLowerCase()}-button`}
               >
-                <div className="w-16 h-16 rounded-full bg-accent-green/20 shadow-neumorphic flex items-center justify-center text-3xl group-hover:shadow-neumorphic-pressed transition-smooth">
+                <div className={`w-20 h-20 rounded-full ${category.color} shadow-neumorphic flex items-center justify-center text-4xl group-hover:shadow-neumorphic-pressed group-hover:scale-110 transition-smooth`}>
                   {category.icon}
                 </div>
-                <span className="text-sm text-text-secondary font-medium">{category.name}</span>
+                <span className="text-sm text-text-secondary font-semibold">{category.name}</span>
               </button>
             ))}
           </div>
