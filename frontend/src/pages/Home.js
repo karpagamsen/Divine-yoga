@@ -36,8 +36,10 @@ export default function Home() {
   const todaySessions = sessions.slice(0, 2);
 
   return (
-    <div className="min-h-screen bg-cream pb-24">
-      <div className="max-w-md mx-auto bg-cream min-h-screen">
+    <div className="min-h-screen pb-24" style={{
+      background: 'linear-gradient(135deg, #FFF9F5 0%, #FFDAB9 50%, #FFE4B5 100%)'
+    }}>
+      <div className="max-w-md mx-auto min-h-screen">
         <div className="p-6 space-y-6">
           <div className="flex items-center justify-between" data-testid="header">
             <div className="flex items-center gap-3">
