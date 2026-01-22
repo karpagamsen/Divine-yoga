@@ -1,9 +1,11 @@
 import { useNavigate } from 'react-router-dom';
 import { Button } from '../components/ui/button';
 import { Sparkles } from 'lucide-react';
+import { useAuth } from '../App';
 
 export default function Welcome() {
   const navigate = useNavigate();
+  const { user } = useAuth();
 
   return (
     <div className="min-h-screen bg-cream flex items-center justify-center p-4">
