@@ -69,14 +69,14 @@ function App() {
     <AuthContext.Provider value={{ user, login, logout }}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={!user ? <Welcome /> : <Navigate to="/home" />} />
+          <Route path="/" element={<Welcome />} />
           <Route path="/login" element={!user ? <Login /> : <Navigate to="/home" />} />
           <Route path="/signup" element={!user ? <Signup /> : <Navigate to="/home" />} />
-          <Route path="/home" element={user ? <Home /> : <Navigate to="/" />} />
-          <Route path="/explore" element={user ? <Explore /> : <Navigate to="/" />} />
-          <Route path="/schedule" element={user ? <Schedule /> : <Navigate to="/" />} />
-          <Route path="/profile" element={user ? <Profile /> : <Navigate to="/" />} />
-          <Route path="/session/:sessionId" element={user ? <SessionDetail /> : <Navigate to="/" />} />
+          <Route path="/home" element={user ? <Home /> : <Navigate to="/login" />} />
+          <Route path="/explore" element={user ? <Explore /> : <Navigate to="/login" />} />
+          <Route path="/schedule" element={user ? <Schedule /> : <Navigate to="/login" />} />
+          <Route path="/profile" element={user ? <Profile /> : <Navigate to="/login" />} />
+          <Route path="/session/:sessionId" element={user ? <SessionDetail /> : <Navigate to="/login" />} />
         </Routes>
       </BrowserRouter>
       <Toaster position="top-center" />
