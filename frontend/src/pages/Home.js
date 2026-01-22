@@ -78,14 +78,14 @@ export default function Home() {
               alt="Meditation"
               className="w-full h-64 object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-warm-orange/40 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-warm-orange/60 via-sunset/30 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-              <Sparkles className="mb-2 animate-float" size={24} />
-              <h1 className="font-heading text-4xl font-bold mb-2" data-testid="hero-title">Find Balance</h1>
-              <p className="text-lg opacity-90" data-testid="hero-subtitle">Welcome to Your Yoga Journey</p>
+              <Sparkles className="mb-2 animate-float text-accent-gold" size={28} />
+              <h1 className="font-heading text-5xl font-bold mb-2 drop-shadow-lg" data-testid="hero-title">Find Balance</h1>
+              <p className="text-xl opacity-95 drop-shadow-md" data-testid="hero-subtitle">Welcome to Your Yoga Journey</p>
             </div>
-            <button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-accent-gold shadow-soft-float flex items-center justify-center hover:scale-110 transition-smooth" data-testid="hero-play-button">
-              <Play className="text-white fill-white ml-1" size={28} />
+            <button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 rounded-full bg-accent-gold shadow-glow flex items-center justify-center hover:scale-110 transition-smooth" data-testid="hero-play-button">
+              <Play className="text-white fill-white ml-1" size={32} />
             </button>
           </div>
 
