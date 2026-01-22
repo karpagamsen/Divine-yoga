@@ -35,23 +35,25 @@ export default function Welcome() {
               </p>
               
               <Button
-                onClick={() => navigate('/signup')}
+                onClick={() => navigate(user ? '/home' : '/signup')}
                 className="w-full gradient-sunrise text-white rounded-full py-6 font-semibold text-lg shadow-soft-float hover:shadow-xl transition-smooth transform hover:-translate-y-1 mb-4"
                 data-testid="get-started-button"
               >
-                Get Started
+                {user ? 'Continue to Home' : 'Get Started'}
               </Button>
               
-              <p className="text-white/70 text-sm">
-                Already have an account?{' '}
-                <button
-                  onClick={() => navigate('/login')}
-                  className="text-white font-semibold hover:underline"
-                  data-testid="login-link"
-                >
-                  Log In
-                </button>
-              </p>
+              {!user && (
+                <p className="text-white/70 text-sm">
+                  Already have an account?{' '}
+                  <button
+                    onClick={() => navigate('/login')}
+                    className="text-white font-semibold hover:underline"
+                    data-testid="login-link"
+                  >
+                    Log In
+                  </button>
+                </p>
+              )}
             </div>
           </div>
         </div>
