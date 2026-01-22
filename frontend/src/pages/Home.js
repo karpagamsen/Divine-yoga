@@ -46,16 +46,16 @@ export default function Home() {
               <img
                 src={user?.profile_image}
                 alt={user?.name}
-                className="w-12 h-12 rounded-full shadow-neumorphic"
+                className="w-14 h-14 rounded-full shadow-neumorphic border-2 border-warm-orange/30"
                 data-testid="user-avatar"
               />
-              <h2 className="font-accent text-2xl text-warm-orange" data-testid="greeting-text">
+              <h2 className="font-accent text-3xl text-warm-orange" data-testid="greeting-text">
                 Hi, {user?.name?.split(' ')[0]}
               </h2>
             </div>
             <div className="flex items-center gap-3">
-              <button className="p-3 rounded-full bg-cream shadow-neumorphic text-warm-orange hover:shadow-neumorphic-pressed transition-smooth" data-testid="notification-button">
-                <Bell size={20} />
+              <button className="p-3 rounded-full bg-white shadow-neumorphic text-warm-orange hover:shadow-neumorphic-pressed transition-smooth" data-testid="notification-button">
+                <Bell size={22} />
               </button>
             </div>
           </div>
