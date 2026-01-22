@@ -9,16 +9,22 @@ module.exports = {
     extend: {
       colors: {
         cream: '#FFF9F5',
-        'warm-orange': '#FF9A5A',
-        'warm-orange-light': '#FFD9A0',
-        'warm-orange-dark': '#E07A3C',
+        'warm-orange': '#FF6B35',
+        'warm-orange-light': '#FFB084',
+        'warm-orange-dark': '#E85D2A',
+        'deep-orange': '#FF4500',
+        'coral': '#FF7F50',
+        'peach': '#FFDAB9',
+        'sunset': '#FF8C42',
         'cream-secondary': '#FFF3E0',
-        'text-primary': '#4A3B32',
+        'text-primary': '#3D2817',
         'text-secondary': '#8C7B70',
         'text-muted': '#C4B5AA',
-        'accent-gold': '#D4AF37',
-        'accent-green': '#A8C6A0',
-        'accent-blue': '#A0C4FF',
+        'accent-gold': '#FFD700',
+        'accent-yellow': '#FFC107',
+        'accent-green': '#8FD14F',
+        'accent-blue': '#87CEEB',
+        'accent-purple': '#DDA0DD',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -66,10 +72,16 @@ module.exports = {
         accent: ['Dancing Script', 'cursive']
       },
       boxShadow: {
-        'neumorphic': '6px 6px 12px #E6DCC8, -6px -6px 12px #FFFFFF',
+        'neumorphic': '8px 8px 16px #E6DCC8, -8px -8px 16px #FFFFFF',
         'neumorphic-pressed': 'inset 4px 4px 8px #E6DCC8, inset -4px -4px 8px #FFFFFF',
-        'soft-float': '0 10px 30px -10px rgba(255, 154, 90, 0.3)',
-        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.07)'
+        'soft-float': '0 10px 40px -10px rgba(255, 107, 53, 0.4)',
+        'glass': '0 8px 32px 0 rgba(255, 107, 53, 0.15)',
+        'glow': '0 0 30px rgba(255, 215, 0, 0.5)'
+      },
+      backgroundImage: {
+        'gradient-divine': 'linear-gradient(135deg, #FF6B35 0%, #FF8C42 25%, #FFB084 50%, #FF7F50 75%, #FF6B35 100%)',
+        'gradient-sunrise': 'linear-gradient(135deg, #FF6B35 0%, #FFD700 100%)',
+        'gradient-sunset': 'linear-gradient(180deg, #FF4500 0%, #FF8C42 50%, #FFD700 100%)'
       }
     }
   },

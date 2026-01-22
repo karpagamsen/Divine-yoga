@@ -9,7 +9,7 @@ body {
     font-family: 'Nunito', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #FFF9F5;
+    background: linear-gradient(135deg, #FFF9F5 0%, #FFDAB9 100%);
 }
 
 code {
@@ -52,12 +52,12 @@ code {
         @apply border-border;
     }
     body {
-        @apply bg-cream text-text-primary;
+        @apply text-text-primary;
     }
 }
 
 .shadow-neumorphic {
-    box-shadow: 6px 6px 12px #E6DCC8, -6px -6px 12px #FFFFFF;
+    box-shadow: 8px 8px 16px #E6DCC8, -8px -8px 16px #FFFFFF;
 }
 
 .shadow-neumorphic-pressed {
@@ -65,7 +65,19 @@ code {
 }
 
 .gradient-sunrise {
-    background: linear-gradient(135deg, #FF9A5A 0%, #FFD9A0 100%);
+    background: linear-gradient(135deg, #FF6B35 0%, #FFD700 100%);
+}
+
+.gradient-divine {
+    background: linear-gradient(135deg, #FF6B35 0%, #FF8C42 25%, #FFB084 50%, #FF7F50 75%, #FF6B35 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 6s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .glass-effect {
